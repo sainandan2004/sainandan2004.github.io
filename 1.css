@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+/* Import Google Fonts  */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+
+}
+
+/* Body Styles */
+body {
+    background: black;
+    color: white;
+}
+
+hr {
+    border-color: #2b2a2aa5;
+}
+
+/* Styles for the NAVBAR */
+.header {
+    position: fixed;
+    /* Use flexbox for layout */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    /* Horizontally align items */
+    align-content: center;
+    z-index: 100;
+}
+
+
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+.logo {
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navbar li {
+
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 35px;
+    font-size: 18px;
+
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+}
+
+/* This is the link color for the navigation bar. */
+
+.navbar li a:hover {
+    color: #ef6e12;
+}
+
+/*   This is the hover color for the navigation bar links. */
+
+nav ul li a:active {
+    color: #ef6e12;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 15px;
+    position: relative;
+}
+
+/*   This is the navigation bar list. */
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*   This is the link color for the navigation bar list items. */
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    padding: 10px;
+}
+
+
+/*   This is the dropdown menu for the navigation bar. */
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*   This is the dropdown menu hover effect. */
+
+.dropdown-menu li {
+    margin-bottom: 5px;
+}
+
+
+/*   This is the dropdown menu list items. */
+
+
+.dropdown-menu li a {
+    color: white;
+}
+
+/*   This is the link color for the dropdown menu list items. */
+
+
+/* Home Section Styles */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    align-items: center;
+    /* Vertically align items */
+
+    padding: 70px 10% 0;
+}
+
+
+
+.home .home-detail {
+    max-width: 600px;
+}
+
+.home-detail h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Span Styles */
+
+span {
+    color: #ef6e12;
+    /* Sets the color of <span> elements to #ef6e12 */
+
+}
+
+.home-detail h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-detail p {
+    font-size: 16px;
+}
+
+
+/* Social Media Icons */
+
+.social-media a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ef6e12;
+    border-radius: 50%;
+    color: #ef6e12;
+    background: transparent;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 15px 30px 0;
+    /* Margin: 30px top, 15px right, 30px bottom, 0 left */
+    transition: .5s ease;
+    /* Transition: 0.5s duration with ease timing function */
+    font-size: 30px;
+
+}
+
+.social-media a:hover {
+    background: #ef6e12;
+    color: black;
+    box-shadow: 0 0 20px #ef6e12;
+    /* Box shadow: 0 offset-x, 0 offset-y, 20px blur radius, #ef6e12 color */
+}
+
+
+/* Button Styles */
+
+.button1 {
+    display: flex;
+    background: #ef6e12;
+    border-radius: 40px;
+    padding: 10px 28px;
+    /* Padding: 10px top, 28px right, 10px bottom, 28px left */
+    border: 0;
+    font-weight: 600;
+}
+
+
+/* Button Styles on hover*/
+.button1:hover,
+.button2:hover {
+    background: black;
+    color: #ef6e12;
+    border: 1px solid #ef6e12;
+    box-shadow: 0 0 20px #ef6e12;
+    /* Box shadow: 0 offset-x, 0 offset-y, 20px blur radius, #ef6e12 color */
+}
+
+.button2:hover span {
+    color: #ef6e12;
+}
+
+/* Image Styles */
+img {
+    width: 500px;
+    margin-left: 20px;
+}
+
+.button2 {
+    background: #ef6e12;
+    border-radius: 40px;
+    padding: 10px 28px;
+    /* Padding: 10px top/bottom, 28px right/left */
+    border: 0;
+    font-weight: 600;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.allheading {
+    font-size: 50px;
+    text-align: center;
+}
+
+.about h3 {
+    font-size: 40px;
+    color: #ef6e12;
+}
+
+.button2 span {
+    color: black;
+}
+
+
+/* Skills Section */
+
+
+.skills h2 {
+    padding: 10px 0 0 0;
+    /* Padding: 10px top, 0 right, 0 bottom, 0 left */
+}
+
+.skills-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    /* flex-wrap: wrap; */
+}
+
+.skills-section .skills-box {
+    padding: 30px 20px 40px 20px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    text-align: center;
+    border: 3px solid #1a1a1a;
+}
+
+.skills .allheading {
+    margin-bottom: 40px;
+}
+
+
+.skills-box:hover {
+    border: 2px solid #ef6e12;
+    transform: scale(1.2);
+
+}
+
+.skills-box {
+    transition: .3s ease-in-out;
+}
+
+.skills-box i {
+    font-size: 50px;
+    color: #ef6e12;
+
+}
+
+.skills h3 {
+    font-size: 26px;
+}
+
+
+/* Projects Section */
+
+.projects-box p {
+    font-size: 16px;
+    margin: 10px 0 3px;
+    /*-------------------------------check------------- */
+}
+
+
+.projects {
+    background: #000;
+    margin: 50px;
+}
+
+.projects h2 {
+    margin-bottom: 40px;
+}
+
+.projects-box {
+    position: relative;
+    border-radius: 90px;
+    box-shadow: 0 0 10px #111;
+    overflow: hidden;
+    /* Hide content that overflows the box */
+    display: flex;
+}
+
+.projects-section {
+    display: grid;
+    /* Use grid for layout */
+    grid-template-columns: repeat(3, 1fr);
+    /*check once grid */
+    text-align: center;
+    gap: 25px;
+}
+
+.projects-box img {
+    width: 90%;
+    height: auto;
+    transition: .5s ease;
+}
+
+.projects-head {
+
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .3), #ef6e12);
+    /* Apply a linear gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    transform: translateY(100%);
+
+}
+
+.projects-box:hover img {
+    transform: scale(1.1);
+    /* Scale the image to 1.1 times its original size on hover */
+}
+
+.projects-box:hover .projects-head {
+    transform: translateY(0%);
+    /* Translate the projects-head element vertically by 0% on hover */
+}
+
+/* -------------------------------- contact --------------------------- */
+
+.table-wrapper {
+    margin: 0 auto;
+}
+
+form input,
+textarea {
+    width: 100%;
+    padding: 15px;
+}
+
+
+table {
+    width: 60%;
+}
+
+td {
+    padding: 3px;
+}
+
+.button3,
+.button1,
+.button2 {
+    cursor: pointer;
+    /* Set the cursor to a pointer shape when hovering over elements with the classes button3, button1, or button2 */
+}
+
+form input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: hsl(0, 3%, 15%);
+    /* hsl = Hue, Saturation, and Lightness It provides a flexible way to specify colors with control over saturation and lightness.*/
+    border-radius: 8px;
+}
+
+table td button {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 28px;
+    background-color: #ef6e12;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+
+
+/* Footer Section */
+
+footer {
+    background: #000;
+}
+
+footer .text p {
+    font-size: 16px;
+    text-align: left;
+}
+
+.footer-bar {
+    display: flex;
+    align-content: space-between;
+}
+
+
+.footer-up {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ef6e12;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+}
+
+footer {
+    background: #000;
+    margin: 20px 30px;
+}
+
+footer .text p {
+    font-size: 16px;
+    text-align: left;
+}
+
+.footer-bar {
+    display: flex;
+    justify-content: space-between;
+    /* Align items along the horizontal axis with space between them */
+    align-items: center;
+    /* Align items along the vertical axis at the center */
+}
+
+.footer-up {
+    background-color: #ef6e12;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer-up a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
